@@ -30,14 +30,14 @@ tylsp.nvim/
 │
 ├── lua/
 │   └── tylsp/
-│       ├── build.lua       # Install python dependencies
-│       └── init.lua        # Setup tylsp if not existed
+│       └── init.lua         # Initiate tylsp using lspconfig for python
 │
 ├── plugin/
-│   └── tylsp.lua           # Verify dependencies before setup
+│   ├── build.lua            # Check & install python packages if not existed
+│   └── tylsp.lua            # Verify lua dependencies before setup
 │
-├── LICENSE                 # Details of MIT License
-└── README.md               # Descriptions and roadmap
+├── LICENSE                  # Details of MIT License
+└── README.md                # Descriptions and roadmap
 ```
 
 ## Acknowledgements
