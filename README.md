@@ -13,13 +13,21 @@
 ```lua
 {
   'aekasitt/tylsp.nvim',
+  config = function()
+    require('tylsp').setup()
+  end,
 }
 ```
 
 ### Packer
 
 ```lua
-use 'aekasitt/tylsp.nvim'
+use {
+  'aekasitt/tylsp.nvim',
+  setup = function()
+    require('tylsp').setup()
+  end,
+}
 ```
 
 
