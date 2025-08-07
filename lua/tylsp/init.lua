@@ -11,11 +11,13 @@ M.setup = function()
       default_config = {
         cmd = { 'ty', 'server' },
         filetypes = { 'python' },
-        root_markers = {
-          '.git',
-          'pyproject.toml',
-          'ty.toml',
-        },
+        root_dir = util.root_pattern(
+          {
+            '.git',
+            'pyproject.toml',
+            'ty.toml',
+          }
+        ),
         settings = {},
       }
     }
