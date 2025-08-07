@@ -11,17 +11,11 @@ M.setup = function()
       default_config = {
         cmd = { 'ty', 'server' },
         filetypes = { 'python' },
-        root_dir = util.root_pattern(
+        root_markers = {
           '.git',
-          'Pipfile',
-          'poetry.lock',
           'pyproject.toml',
-          'setup.py',
-          'setup.cfg',
-          'requirements.txt',
           'ty.toml',
-          'uv.lock'
-        ),
+        },
         settings = {},
       }
     }
